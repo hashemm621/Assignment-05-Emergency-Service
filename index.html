@@ -47,13 +47,15 @@
             <div
               class="flex justify-center items-center gap-4 bg-[rgba(65_255_107/0.1)] py-3 px-7 rounded-[50px]"
             >
-              <span class="text-lg font-extrabold font-inter">0</span>
+              <span id="hart-count" class="text-lg font-extrabold font-inter"
+                >0</span
+              >
               <img class="max-w-7" src="./assets/heart.png" alt="heart logo" />
             </div>
             <div
               class="flex justify-center items-center gap-4 bg-[rgba(65_255_107/0.1)] py-3 px-7 rounded-[50px]"
             >
-              <span class="text-lg font-extrabold font-inter">100</span>
+              <span id="coin" class="text-lg font-extrabold font-inter">100</span>
               <img class="max-w-7" src="./assets/coin.png" alt="coin img" />
             </div>
             <div class="bg-[#00A63E] py-3 px-3 md:px-7 rounded-[50px]">
@@ -91,7 +93,7 @@
       </section>
       <!-- hero section ends here -->
 
-      <section class="bg-[rgba(65_255_107/0.1)]">
+      <section id="card-container" class="bg-[rgba(65_255_107/0.1)]">
         <!-- card section starts here -->
         <div class="grid grid-cols-12 w-11/12 mx-auto gap-5 pt-13">
           <div class="col-span-12 md:col-span-6 lg:col-span-9">
@@ -102,161 +104,295 @@
                 <div class="card-body">
                   <div class="flex items-center justify-between">
                     <img class="w-8" src="./assets/emergency.png" alt="siren" />
-                    <i class="fa-regular fa-heart text-2xl"></i>
+                    <i class="fa-regular fa-heart text-2xl hart-icon"></i>
                   </div>
                   <h2 class="card-title font-hind text-2xl text-[#111111]">
                     National Emergency Service
                   </h2>
-                  <p class="text-lg font-roboto text-[#5C5C5C]">Call 999 for immediate help</p>
-                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">999</h3>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">
+                    Call 999 for immediate help
+                  </p>
+                  <span
+                    class="bg-[rgba(242_242_242/1)] text-[#5C5C5C] w-4/12 text-center rounded-3xl py-3"
+                    >Public Service</span
+                  >
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">
+                    999
+                  </h3>
                   <div class="flex gap-3">
-                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
-                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn btn flex-1 font-roboto rounded-lg">
+                      <i class="fa-regular fa-clone"></i> Copy
+                    </button>
+                    <button
+                      class="call-btn btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"
+                    >
+                      <i class="fa-solid fa-phone"></i> Call
+                    </button>
                   </div>
                 </div>
               </div>
 
               <!-- card-2   -->
-               <div class="card bg-white">
+              <div class="card bg-white">
                 <div class="card-body">
                   <div class="flex items-center justify-between">
                     <img class="w-8" src="./assets/police.png" alt="siren" />
-                    <i class="fa-regular fa-heart text-2xl"></i>
+                    <i class="fa-regular fa-heart text-2xl hart-icon"></i>
                   </div>
                   <h2 class="card-title font-hind text-2xl text-[#111111]">
                     Bangladesh Police
                   </h2>
-                  <p class="text-lg font-roboto text-[#5C5C5C]">Ensuring public safety and security</p>
-                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">999</h3>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">
+                    Ensuring public safety and security
+                  </p>
+                  <span
+                    class="bg-[rgba(242_242_242/1)] text-[#5C5C5C] w-4/12 text-center rounded-3xl py-3"
+                    >Police</span
+                  >
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">
+                    999
+                  </h3>
                   <div class="flex gap-3">
-                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
-                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn btn flex-1 font-roboto rounded-lg">
+                      <i class="fa-regular fa-clone"></i> Copy
+                    </button>
+                    <button
+                      class="call-btn btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"
+                    >
+                      <i class="fa-solid fa-phone"></i> Call
+                    </button>
                   </div>
                 </div>
               </div>
               <!-- card 3 -->
-               <div class="card bg-white">
+              <div class="card bg-white">
                 <div class="card-body">
                   <div class="flex items-center justify-between">
                     <img class="w-8" src="./assets/ambulance.png" alt="siren" />
-                    <i class="fa-regular fa-heart text-2xl"></i>
+                    <i class="fa-regular fa-heart text-2xl hart-icon"></i>
                   </div>
                   <h2 class="card-title font-hind text-2xl text-[#111111]">
                     24/7 Ambulance Support
                   </h2>
-                  <p class="text-lg font-roboto text-[#5C5C5C]">Call 999 for quick medical emergency response</p>
-                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">999</h3>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">
+                    Call 999 for quick medical emergency response
+                  </p>
+                  <span
+                    class="bg-[rgba(242_242_242/1)] text-[#5C5C5C] w-4/12 text-center rounded-3xl py-3"
+                    >Health Service</span
+                  >
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">
+                    999
+                  </h3>
                   <div class="flex gap-3">
-                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
-                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn btn flex-1 font-roboto rounded-lg">
+                      <i class="fa-regular fa-clone"></i> Copy
+                    </button>
+                    <button
+                      class="call-btn btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"
+                    >
+                      <i class="fa-solid fa-phone"></i> Call
+                    </button>
                   </div>
                 </div>
               </div>
               <!-- card 4 -->
-               <div class="card bg-white">
+              <div class="card bg-white">
                 <div class="card-body">
                   <div class="flex items-center justify-between">
-                    <img class="w-8" src="./assets/fire-service.png" alt="siren" />
-                    <i class="fa-regular fa-heart text-2xl"></i>
+                    <img
+                      class="w-8"
+                      src="./assets/fire-service.png"
+                      alt="siren"
+                    />
+                    <i class="fa-regular fa-heart text-2xl hart-icon"></i>
                   </div>
                   <h2 class="card-title font-hind text-2xl text-[#111111]">
                     Fire Service & Civil Defence
                   </h2>
-                  <p class="text-lg font-roboto text-[#5C5C5C]">Call 999 for fire and rescue emergencies</p>
-                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">999</h3>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">
+                    Call 999 for fire and rescue emergencies
+                  </p>
+                  <span
+                    class="bg-[rgba(242_242_242/1)] text-[#5C5C5C] w-4/12 text-center rounded-3xl py-3"
+                    >Fire Service</span
+                  >
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">
+                    999
+                  </h3>
                   <div class="flex gap-3">
-                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
-                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn btn flex-1 font-roboto rounded-lg">
+                      <i class="fa-regular fa-clone"></i> Copy
+                    </button>
+                    <button
+                      class="call-btn btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"
+                    >
+                      <i class="fa-solid fa-phone"></i> Call
+                    </button>
                   </div>
                 </div>
               </div>
               <!-- card 5 -->
-               <div class="card bg-white">
+              <div class="card bg-white">
                 <div class="card-body">
                   <div class="flex items-center justify-between">
                     <img class="w-8" src="./assets/brac.png" alt="siren" />
-                    <i class="fa-regular fa-heart text-2xl"></i>
+                    <i class="fa-regular fa-heart text-2xl hart-icon"></i>
                   </div>
                   <h2 class="card-title font-hind text-2xl text-[#111111]">
                     BRAC Bangladesh
                   </h2>
-                  <p class="text-lg font-roboto text-[#5C5C5C]">Working for education, health, and social development</p>
-                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">09678191911</h3>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">
+                    Working for education, health, and social development
+                  </p>
+                  <span
+                    class="bg-[rgba(242_242_242/1)] text-[#5C5C5C] w-4/12 text-center rounded-3xl py-3"
+                    >NGO</span
+                  >
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">
+                    09678191911
+                  </h3>
                   <div class="flex gap-3">
-                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
-                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn btn flex-1 font-roboto rounded-lg">
+                      <i class="fa-regular fa-clone"></i> Copy
+                    </button>
+                    <button
+                      class="call-btn btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"
+                    >
+                      <i class="fa-solid fa-phone"></i> Call
+                    </button>
                   </div>
                 </div>
               </div>
               <!-- card 6 -->
-               <div class="card bg-white">
+              <div class="card bg-white">
                 <div class="card-body">
                   <div class="flex items-center justify-between">
-                    <img class="w-8" src="./assets/Bangladesh-Railway.png" alt="siren" />
-                    <i class="fa-regular fa-heart text-2xl"></i>
+                    <img
+                      class="w-8"
+                      src="./assets/Bangladesh-Railway.png"
+                      alt="siren"
+                    />
+                    <i class="fa-regular fa-heart text-2xl hart-icon"></i>
                   </div>
                   <h2 class="card-title font-hind text-2xl text-[#111111]">
                     Bangladesh Railway Helpline
                   </h2>
-                  <p class="text-lg font-roboto text-[#5C5C5C]">Book tickets online via Rail Sheba App</p>
-                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">+880 2 9564154</h3>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">
+                    Book tickets online via Rail Sheba App
+                  </p>
+                  <span
+                    class="bg-[rgba(242_242_242/1)] text-[#5C5C5C] w-4/12 text-center rounded-3xl py-3"
+                    >Railway Service</span
+                  >
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">
+                    +880 2 9564154
+                  </h3>
                   <div class="flex gap-3">
-                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
-                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn btn flex-1 font-roboto rounded-lg">
+                      <i class="fa-regular fa-clone"></i> Copy
+                    </button>
+                    <button
+                      class="call-btn btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"
+                    >
+                      <i class="fa-solid fa-phone"></i> Call
+                    </button>
                   </div>
                 </div>
               </div>
               <!-- card 7 -->
-               <div class="card bg-white">
+              <div class="card bg-white">
                 <div class="card-body">
                   <div class="flex items-center justify-between">
                     <img class="w-8" src="./assets/navy.jpg" alt="siren" />
-                    <i class="fa-regular fa-heart text-2xl"></i>
+                    <i class="fa-regular fa-heart text-2xl hart-icon"></i>
                   </div>
                   <h2 class="card-title font-hind text-2xl text-[#111111]">
                     Armed Forces of Bangladesh
                   </h2>
-                  <p class="text-lg font-roboto text-[#5C5C5C]">Pride, discipline, and duty for the nation</p>
-                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">+880 2 9870011</h3>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">
+                    Pride, discipline, and duty for the nation
+                  </p>
+                  <span
+                    class="bg-[rgba(242_242_242/1)] text-[#5C5C5C] w-4/12 text-center rounded-3xl py-3"
+                    >Defence</span
+                  >
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">
+                    +880 2 9870011
+                  </h3>
                   <div class="flex gap-3">
-                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
-                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn btn flex-1 font-roboto rounded-lg">
+                      <i class="fa-regular fa-clone"></i> Copy
+                    </button>
+                    <button
+                      class="call-btn btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"
+                    >
+                      <i class="fa-solid fa-phone"></i> Call
+                    </button>
                   </div>
                 </div>
               </div>
               <!-- card 8 -->
-               <div class="card bg-white">
+              <div class="card bg-white">
                 <div class="card-body">
                   <div class="flex items-center justify-between">
                     <img class="w-8" src="./assets/emergency.png" alt="siren" />
-                    <i class="fa-regular fa-heart text-2xl"></i>
+                    <i class="fa-regular fa-heart text-2xl hart-icon"></i>
                   </div>
                   <h2 class="card-title font-hind text-2xl text-[#111111]">
                     Nagorik Sheba
                   </h2>
-                  <p class="text-lg font-roboto text-[#5C5C5C]">Help from Home</p>
-                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">333</h3>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">
+                    Help from Home
+                  </p>
+                  <span
+                    class="bg-[rgba(242_242_242/1)] text-[#5C5C5C] w-4/12 text-center rounded-3xl py-3"
+                    >Civil Service</span
+                  >
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">
+                    333
+                  </h3>
                   <div class="flex gap-3">
-                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
-                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn btn flex-1 font-roboto rounded-lg">
+                      <i class="fa-regular fa-clone"></i> Copy
+                    </button>
+                    <button
+                      class="call-btn btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"
+                    >
+                      <i class="fa-solid fa-phone"></i> Call
+                    </button>
                   </div>
                 </div>
               </div>
               <!-- card 9 -->
-               <div class="card bg-white">
+              <div class="card bg-white">
                 <div class="card-body">
                   <div class="flex items-center justify-between">
                     <img class="w-8" src="./assets/emergency.png" alt="siren" />
-                    <i class="fa-regular fa-heart text-2xl"></i>
+                    <i class="fa-regular fa-heart text-2xl hart-icon"></i>
                   </div>
                   <h2 class="card-title font-hind text-2xl text-[#111111]">
                     Sonali e-Sheba
                   </h2>
-                  <p class="text-lg font-roboto text-[#5C5C5C]">Safe your Money</p>
-                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">333</h3>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">
+                    Safe your Money
+                  </p>
+                  <span
+                    class="bg-[rgba(242_242_242/1)] text-[#5C5C5C] w-4/12 text-center rounded-3xl py-3"
+                    >Bank Service</span
+                  >
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">
+                    333
+                  </h3>
                   <div class="flex gap-3">
-                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
-                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn btn flex-1 font-roboto rounded-lg">
+                      <i class="fa-regular fa-clone"></i> Copy
+                    </button>
+                    <button
+                      class="call-btn btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"
+                    >
+                      <i class="fa-solid fa-phone"></i> Call
+                    </button>
                   </div>
                 </div>
               </div>
@@ -267,13 +403,19 @@
           <!-- aside section starts here -->
           <aside class="col-span-full md:col-span-6 lg:col-span-3 bg-white p-6">
             <div>
-                <div class="flex justify-between items-center">
-                    <div class="flex items-center justify-center gap-3">
-                        <span class="text-2xl"><i class="fa-solid fa-clock-rotate-left"></i></span>
-                        <p class="font-roboto font-semibold text-2xl">Call History</p>
-                    </div>
-                    <button class="rounded-[50px] font-inter font-semibold text-white bg-[#00A63E] py-3 px-9">Clear</button>
+              <div class="flex justify-between items-center">
+                <div class="flex items-center justify-center gap-3">
+                  <span class="text-2xl"
+                    ><i class="fa-solid fa-clock-rotate-left"></i
+                  ></span>
+                  <p class="font-roboto font-semibold text-2xl">Call History</p>
                 </div>
+                <button
+                  class="rounded-[50px] font-inter font-semibold text-white bg-[#00A63E] py-3 px-9"
+                >
+                  Clear
+                </button>
+              </div>
             </div>
           </aside>
           <!-- aside section ends here -->
