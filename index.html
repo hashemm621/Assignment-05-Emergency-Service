@@ -1,23 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>National Emergency Service</title>
     <!-- Fav Icon here -->
-     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
-     <!-- DaisyUi cdn here -->
-      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-      <!-- tailwind cdn here -->
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- DaisyUi cdn here -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- tailwind cdn here -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontAwesome cdn here -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <!-- navBer section starts here -->
+    <header>
+      <nav>
+        <div
+          class="flex justify-between flex-col md:flex-row gap-10 items-center w-11/12 mx-auto my-12"
+        >
+          <div class="flex items-center justify-center gap-4">
+            <img
+              class="max-w-[50px]"
+              src="./assets/logo.png"
+              alt="website logo"
+            />
+            <h2 class="text-xl font-extrabold text-[#006747]">
+              Emergency <br />
+              Service
+            </h2>
+          </div>
+          <div class="flex justify-center items-center gap-3 md:gap-5">
+            <div
+              class="flex justify-center items-center gap-4 bg-[rgba(65_255_107/0.1)] py-3 px-7 rounded-[50px]"
+            >
+              <span class="text-lg font-extrabold font-inter">0</span>
+              <img class="max-w-7" src="./assets/heart.png" alt="heart logo" />
+            </div>
+            <div
+              class="flex justify-center items-center gap-4 bg-[rgba(65_255_107/0.1)] py-3 px-7 rounded-[50px]"
+            >
+              <span class="text-lg font-extrabold font-inter">100</span>
+              <img class="max-w-7" src="./assets/coin.png" alt="coin img" />
+            </div>
+            <div class="bg-[#00A63E] py-3 px-3 md:px-7 rounded-[50px]">
+              <p class="text-sm md:text-lg font-semibold font-inter">
+                <span>0</span> Copy
+              </p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- navBar section ends here -->
 
-</head>
-<body>
+    <main>
+      <!-- hero section starts here -->
+      <section>
+        <div
+          class="flex flex-col items-center justify-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white py-10 px-6"
+        >
+          <img
+            class="max-w-24"
+            src="./assets/logo-dark.png"
+            alt="banner-logo"
+          />
+          <h1
+            class="my-5 font-hind font-bold text-3xl text-center md:text-[2.50rem]"
+          >
+            Emergency Service Directory
+          </h1>
+          <p class="text-center text-xl font-semibold font-hind">
+            Government Emergency Services at Your Fingertip – A Project by
+            Government of the People’s Republic of Bangladesh
+          </p>
+        </div>
+      </section>
+      <!-- hero section ends here -->
 
+      <section class="bg-[rgba(65_255_107/0.1)]">
+        <!-- card section starts here -->
+        <div class="grid grid-cols-12 w-11/12 mx-auto gap-5 pt-13">
+          <div class="col-span-12 md:col-span-6 lg:col-span-9">
+            <!-- card-container -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <!-- card-1  -->
+              <div class="card bg-white">
+                <div class="card-body">
+                  <div class="flex items-center justify-between">
+                    <img class="w-8" src="./assets/emergency.png" alt="siren" />
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
+                  <h2 class="card-title font-hind text-2xl text-[#111111]">
+                    National Emergency Service
+                  </h2>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">National Emergency Number</p>
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">999</h3>
+                  <div class="flex gap-3">
+                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
+                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                  </div>
+                </div>
+              </div>
 
+              <!-- card-2   -->
+               <div class="card bg-white">
+                <div class="card-body">
+                  <div class="flex items-center justify-between">
+                    <img class="w-8" src="./assets/emergency.png" alt="siren" />
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
+                  <h2 class="card-title font-hind text-2xl text-[#111111]">
+                    National Emergency Service
+                  </h2>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">National Emergency Number</p>
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">999</h3>
+                  <div class="flex gap-3">
+                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
+                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 3 -->
+               <div class="card bg-white">
+                <div class="card-body">
+                  <div class="flex items-center justify-between">
+                    <img class="w-8" src="./assets/emergency.png" alt="siren" />
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
+                  <h2 class="card-title font-hind text-2xl text-[#111111]">
+                    National Emergency Service
+                  </h2>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">National Emergency Number</p>
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">999</h3>
+                  <div class="flex gap-3">
+                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
+                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 4 -->
+               <div class="card bg-white">
+                <div class="card-body">
+                  <div class="flex items-center justify-between">
+                    <img class="w-8" src="./assets/emergency.png" alt="siren" />
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
+                  <h2 class="card-title font-hind text-2xl text-[#111111]">
+                    National Emergency Service
+                  </h2>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">National Emergency Number</p>
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">999</h3>
+                  <div class="flex gap-3">
+                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
+                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 5 -->
+               <div class="card bg-white">
+                <div class="card-body">
+                  <div class="flex items-center justify-between">
+                    <img class="w-8" src="./assets/emergency.png" alt="siren" />
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
+                  <h2 class="card-title font-hind text-2xl text-[#111111]">
+                    National Emergency Service
+                  </h2>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">National Emergency Number</p>
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">999</h3>
+                  <div class="flex gap-3">
+                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
+                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 6 -->
+               <div class="card bg-white">
+                <div class="card-body">
+                  <div class="flex items-center justify-between">
+                    <img class="w-8" src="./assets/emergency.png" alt="siren" />
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
+                  <h2 class="card-title font-hind text-2xl text-[#111111]">
+                    National Emergency Service
+                  </h2>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">National Emergency Number</p>
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">999</h3>
+                  <div class="flex gap-3">
+                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
+                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 7 -->
+               <div class="card bg-white">
+                <div class="card-body">
+                  <div class="flex items-center justify-between">
+                    <img class="w-8" src="./assets/emergency.png" alt="siren" />
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
+                  <h2 class="card-title font-hind text-2xl text-[#111111]">
+                    National Emergency Service
+                  </h2>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">National Emergency Number</p>
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">999</h3>
+                  <div class="flex gap-3">
+                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
+                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 8 -->
+               <div class="card bg-white">
+                <div class="card-body">
+                  <div class="flex items-center justify-between">
+                    <img class="w-8" src="./assets/emergency.png" alt="siren" />
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
+                  <h2 class="card-title font-hind text-2xl text-[#111111]">
+                    National Emergency Service
+                  </h2>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">National Emergency Number</p>
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">999</h3>
+                  <div class="flex gap-3">
+                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
+                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                  </div>
+                </div>
+              </div>
+              <!-- card 9 -->
+               <div class="card bg-white">
+                <div class="card-body">
+                  <div class="flex items-center justify-between">
+                    <img class="w-8" src="./assets/emergency.png" alt="siren" />
+                    <i class="fa-regular fa-heart text-2xl"></i>
+                  </div>
+                  <h2 class="card-title font-hind text-2xl text-[#111111]">
+                    National Emergency Service
+                  </h2>
+                  <p class="text-lg font-roboto text-[#5C5C5C]">National Emergency Number</p>
+                  <h3 class="text-3xl font-roboto font-bold text-[#111111]">999</h3>
+                  <div class="flex gap-3">
+                    <button class="btn flex-1 font-roboto rounded-lg"><i class="fa-regular fa-clone"></i> Copy</button>
+                    <button class="btn flex-1 rounded-lg bg-[#00A63E] text-white font-roboto"><i class="fa-solid fa-phone"></i> Call</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card section ends here -->
 
+          <!-- aside section starts here -->
+          <aside class="bg-red-400 col-span-full md:col-span-6 lg:col-span-3">
+            <h1>Aside section</h1>
+          </aside>
+          <!-- aside section ends here -->
+        </div>
+      </section>
+    </main>
 
-    
     <script src="./script/main.js"></script>
-</body>
+  </body>
 </html>
