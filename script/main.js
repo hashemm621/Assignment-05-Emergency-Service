@@ -44,13 +44,26 @@ getId("card-container").addEventListener("click", (e) => {
     }
   }
   if (e.target.classList.contains("copy-btn")) {
-    console.log("copy button clicked");
+    const copyBtn = e.target;
+    const copy = getId("copy-count");
+    const copyCount = Number(copy.innerText);
+    const setCopy = copyCount + 1;
+    copy.innerText = setCopy;
+
+    const copyNumber = copyBtn.parentNode.parentNode.children[4].innerText;
+    navigator.clipboard
+      .writeText(copyNumber)
+      .then(() => {
+        alert(`Copied: ${copyNumber}`);
+      })
+      .catch((err) => {
+        console.error("Failed to copy: ", err);
+      });
   }
 });
 
 // aside clear btn
-getId("clear-btn").addEventListener('click', () => {
-    const asideContent = getId("aside-container");
-    asideContent.innerHTML = '';
-})
-
+getId("clear-btn").addEventListener("click", () => {
+  const asideContent = getId("aside-container");
+  asideContent.innerHTML = "";
+});
